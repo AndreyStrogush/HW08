@@ -15,7 +15,7 @@ public class Work implements Runnable {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Message " + e.getMessage());
         }
         System.out.println("Value is " + value);
         System.out.println(name + " finished work");

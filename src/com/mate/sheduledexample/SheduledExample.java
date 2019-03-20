@@ -9,15 +9,15 @@ public class SheduledExample {
     public static void sheduledTest() throws ExecutionException, InterruptedException{
         ScheduledExecutorService ses =
                 Executors.newSingleThreadScheduledExecutor();
-        ScheduledFuture<Integer> scheduledFuture1 =
+        ScheduledFuture<Integer> firstFuture =
                 ses.schedule(new CallableExample(4), 3, TimeUnit.SECONDS);
-        ScheduledFuture<Integer> scheduledFuture2 =
+        ScheduledFuture<Integer> secondFuture =
                 ses.schedule(new CallableExample(6), 5, TimeUnit.SECONDS);
 
-        System.out.println("Remaining delay of thread #1: " + scheduledFuture1.getDelay(TimeUnit.SECONDS));
-        System.out.println("Remaining delay of thread #2: " + scheduledFuture2.getDelay(TimeUnit.SECONDS));
-        System.out.println(scheduledFuture1.get());
-        System.out.println(scheduledFuture2.get());
+        System.out.println("Remaining delay of thread #1: " + firstFuture.getDelay(TimeUnit.SECONDS));
+        System.out.println("Remaining delay of thread #2: " + secondFuture.getDelay(TimeUnit.SECONDS));
+        System.out.println(firstFuture.get());
+        System.out.println(secondFuture.get());
 
         ses.shutdown();
     }

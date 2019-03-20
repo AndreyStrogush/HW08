@@ -6,7 +6,8 @@ import com.mate.forkjoin.ForkJoinApp;
 import com.mate.sheduledexample.SheduledExample;
 import com.mate.threadpool.ThreadPoolExample;
 
-public class ConsolApp {
+public class ConsoleApplication {
+
     public static void main(String[] args) throws Exception {
         ForkJoinApp.forkJointest();
         CallableFutureTest.callableFutureTest();
@@ -14,4 +15,5 @@ public class ConsolApp {
         ThreadPoolExample.threadPoolTest();
         ExecutorExample.executorTest();
     }
+
 }
