@@ -12,9 +12,7 @@ public class ExecutorExample {
         for (int i = 0; i < COUNT_OF_ITERATIONS; i++) {
             service.execute(new Work("Thread #" + i, i));
         }
-
         service.shutdown();
         System.out.println("Finished all threads");
     }
-
 }

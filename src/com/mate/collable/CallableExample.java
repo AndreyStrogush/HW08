@@ -17,5 +17,4 @@ public class CallableExample implements Callable<Integer> {
         }
         return result;
     }
-
 }

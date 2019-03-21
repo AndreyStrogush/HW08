@@ -30,5 +30,4 @@ public class SumCount extends RecursiveTask<Long> {
             return first.join() + secondValue;
         }
     }
-
 }

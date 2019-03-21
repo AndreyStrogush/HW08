@@ -15,5 +15,4 @@ public class ConsoleApplication {
         ThreadPoolExample.threadPoolTest();
         ExecutorExample.executorTest();
     }
-
 }

@@ -2,10 +2,14 @@ package com.mate.collable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class CallableFutureTest {
-    public static final int NUMBER_OF_ITERATIONS = 5;
+    private static final int NUMBER_OF_ITERATIONS = 5;
 
     public static void callableFutureTest() {
         ExecutorService executor = Executors.newFixedThreadPool(3);
@@ -24,5 +28,4 @@ public class CallableFutureTest {
         }
         executor.shutdown();
     }
-
 }

@@ -20,5 +20,4 @@ public class Work implements Runnable {
         System.out.println("Value is " + value);
         System.out.println(name + " finished work");
     }
-
 }
